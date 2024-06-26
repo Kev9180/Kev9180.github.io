@@ -26,15 +26,23 @@ header {
 
 .intro-header {
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #bebebe;
+    display: flex;
+    align-items: center;
+}
+
+.earth-icon {
+    position: relative;
+    margin-top: 22%;
 }
 
 .splash {
     position: relative;
     display: inline-block;
+    padding: 0.5vh;
     bottom: -20px;
     opacity: 0;
 }
