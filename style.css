@@ -5,12 +5,10 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-header {
-    position: relative;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 80px;
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .intro {
@@ -57,4 +55,73 @@ header {
     bottom: 150px;
     opacity: 0;
     transition: ease-in-out 0.5s;
+}
+
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 20vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #bdbbbb; /* Optional: Set a background color */
+    padding: 20px; /* Optional: Add some padding */
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1); /* Optional: Add a shadow for better visibility */
+}
+
+.header-photo-container {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.header-selfie {
+    object-fit: cover;
+    object-position: center 30%;
+    width: 25vh;
+    height: 25vh;
+    border-radius: 50%;
+    border: 8px solid #8f8d8d;
+    margin-bottom: 20px;
+}
+
+.header-nav-container {
+    display: flex;
+    flex-direction: column; /* Stack links vertically */
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+#header-photo-container {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.header-nav-container a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Optional: Inherit text color from parent */
+    padding: 10px 0; /* Optional: Add padding for spacing */
+}
+
+.header-links-container a {
+    text-decoration: none; /* Remove underline */
+}
+
+.header-links-container a i {
+    margin: 15px; /* Optional: Add some space between the icons */
+}
+
+.header-copyright-container {
+    position: absolute;
+    bottom: 20px; /* Adjust as needed */
+    width: 100%;
+    text-align: center; /* Center text */
+}
+
+.copyright-info {
+    font-size: 12px;
+    padding: 10px 0; /* Add padding */
+    text-align: center; /* Center text */
 }

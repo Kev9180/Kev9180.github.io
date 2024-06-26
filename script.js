@@ -1,7 +1,9 @@
+// Extract the appropriate HTML elements
 let intro = document.querySelector('.intro');
 let introHeader = document.querySelector('.intro-header');
 let splashSpan = document.querySelectorAll('.splash');
 
+// On load, display the splash screen
 window.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => {
         splashSpan.forEach((span, index) => {
@@ -21,9 +23,9 @@ window.addEventListener('DOMContentLoaded', () => {
             })
         }, 2000)    // 2 seconds
 
-
+        // Set a timeout for the scroll up animation that dismisses that the splash screen
         setTimeout(() => {
             intro.style.top = '-100vh';
-        }, 2300)
+        }, 2000)    // 2 seconds
     })
 })
