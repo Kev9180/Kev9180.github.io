@@ -66,9 +66,9 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #bdbbbb; /* Optional: Set a background color */
-    padding: 20px; /* Optional: Add some padding */
-    box-shadow: 2px 0 5px rgba(0,0,0,0.1); /* Optional: Add a shadow for better visibility */
+    background-color: #bdbbbb;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
 }
 
 .header-photo-container {
@@ -88,7 +88,7 @@ header {
 
 .header-nav-container {
     display: flex;
-    flex-direction: column; /* Stack links vertically */
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-bottom: 40px;
@@ -100,28 +100,28 @@ header {
 }
 
 .header-nav-container a {
-    text-decoration: none; /* Remove underline */
-    color: inherit; /* Optional: Inherit text color from parent */
-    padding: 10px 0; /* Optional: Add padding for spacing */
+    text-decoration: none;
+    color: inherit;
+    padding: 10px 0;
 }
 
 .header-links-container a {
-    text-decoration: none; /* Remove underline */
+    text-decoration: none;
 }
 
 .header-links-container a i {
-    margin: 15px; /* Optional: Add some space between the icons */
+    margin: 15px;
 }
 
 .header-copyright-container {
     position: absolute;
-    bottom: 20px; /* Adjust as needed */
+    bottom: 20px;
     width: 100%;
-    text-align: center; /* Center text */
+    text-align: center;
 }
 
 .copyright-info {
     font-size: 12px;
-    padding: 10px 0; /* Add padding */
-    text-align: center; /* Center text */
+    padding: 10px 0;
+    text-align: center;
 }
