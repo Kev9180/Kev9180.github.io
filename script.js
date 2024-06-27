@@ -29,3 +29,12 @@ window.addEventListener('DOMContentLoaded', () => {
         }, 2000)    // 2 seconds
     })
 })
+
+document.addEventListener("DOMContentLoaded", function() {
+    const hamburgerMenu = document.querySelector(".hamburger-menu");
+    const headerNavContainer = document.querySelector(".header-nav-container");
+
+    hamburgerMenu.addEventListener("click", function() {
+        headerNavContainer.classList.toggle("active");
+    });
+});
