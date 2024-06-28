@@ -38,3 +38,52 @@ document.addEventListener("DOMContentLoaded", function() {
         headerNavContainer.classList.toggle("active");
     });
 });
+
+// Fetch and display education data
+document.addEventListener("DOMContentLoaded", function() {
+    fetch('json/education.json')
+        .then(response => response.json())
+        .then(data => displayEducationData(data))
+        .catch(error => console.error('Error fetching education data:', error));
+});
+
+// Handle fetching the education data from the JSON file and adding it to the HTML
+function displayEducationData(data) {
+    const container = document.getElementById('education-container');
+
+    data.forEach(school => {
+        const schoolDiv = document.createElement('div');
+        schoolDiv.classList.add('school');
+
+        const schoolInfo = document.createElement('div');
+        schoolInfo.classList.add('school-info');
+
+        const schoolName = document.createElement('div');
+        schoolName.textContent = school.SchoolName;
+        schoolName.classList.add('school-name');
+        schoolInfo.appendChild(schoolName);
+
+        const dates = document.createElement('div');
+        dates.textContent = school.Dates;
+        dates.classList.add('school-dates');
+        schoolInfo.appendChild(dates);
+
+        const degreeInfo = document.createElement('div');
+        degreeInfo.classList.add('degree-info');
+
+        const degree = document.createElement('div');
+        degree.textContent = school.Degree;
+        degree.classList.add('school-degree');
+        degreeInfo.appendChild(degree);
+
+        const gpa = document.createElement('div');
+        gpa.textContent = `GPA: ${school.GPA.toFixed(2)}`;
+        gpa.classList.add('school-gpa');
+        degreeInfo.appendChild(gpa);
+
+        schoolDiv.appendChild(schoolInfo);
+        schoolDiv.appendChild(degreeInfo);
+
+        container.appendChild(schoolDiv);
+    });
+}
