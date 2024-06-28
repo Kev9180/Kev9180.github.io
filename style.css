@@ -161,8 +161,13 @@ main {
 
 section {
     justify-content: left;
-    border-bottom: 1px solid #ccc; /* Optional: add a border between sections */
+    border-bottom: 1px solid #ccc;
     padding: 5%;
+}
+
+.home-header {
+    font-weight: 700;
+    font-size: 5rem;
 }
 
 /* Responsive adjustments */
