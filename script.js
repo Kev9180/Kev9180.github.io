@@ -1,4 +1,10 @@
-//On page load, set up a listener for the menu button and fetch all the appropriate json files
+// Find the key.
+let secret1 = 'cmVk'
+let secret2 = 'SSdt'
+let secret3 = 'IGhp'
+let secret4 = 'IQ=='
+
+// On page load, set up a listener for the menu button and fetch all the appropriate json files
 document.addEventListener("DOMContentLoaded", function() {
     const hamburgerMenu = document.querySelector(".hamburger-menu");
     const headerNavContainer = document.querySelector(".header-nav-container");
