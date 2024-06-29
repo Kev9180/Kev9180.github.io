@@ -1,35 +1,4 @@
-// Extract the appropriate HTML elements
-let intro = document.querySelector('.intro');
-let introHeader = document.querySelector('.intro-header');
-let splashSpan = document.querySelectorAll('.splash');
-
-// On load, display the splash screen
-window.addEventListener('DOMContentLoaded', () => {
-    setTimeout(() => {
-        splashSpan.forEach((span, index) => {
-            // Set a timeout to handle how quickly the three intro spans will appear ("Hello", "world!", and Earth icon)
-            setTimeout( () => {
-                span.classList.add('active');
-            }, (index + 1) * 400)
-        });
-
-        // Set a timeout for the welcome prompt text - how long it will be displayed on the screen
-        setTimeout(() => {
-            splashSpan.forEach((span, index) => {
-                setTimeout(() => {
-                    span.classList.remove('active');
-                    span.classList.add('fade');
-                }, (index + 1) * 30)
-            })
-        }, 2000)    // 2 seconds
-
-        // Set a timeout for the scroll up animation that dismisses that the splash screen
-        setTimeout(() => {
-            intro.style.top = '-100vh';
-        }, 2000)    // 2 seconds
-    })
-})
-
+//On page load, set up a listener for the menu button and fetch all the appropriate json files
 document.addEventListener("DOMContentLoaded", function() {
     const hamburgerMenu = document.querySelector(".hamburger-menu");
     const headerNavContainer = document.querySelector(".header-nav-container");
@@ -37,53 +6,191 @@ document.addEventListener("DOMContentLoaded", function() {
     hamburgerMenu.addEventListener("click", function() {
         headerNavContainer.classList.toggle("active");
     });
-});
 
-// Fetch and display education data
-document.addEventListener("DOMContentLoaded", function() {
     fetch('json/education.json')
         .then(response => response.json())
         .then(data => displayEducationData(data))
         .catch(error => console.error('Error fetching education data:', error));
+
+    fetch('json/experience.json')
+        .then(response => response.json())
+        .then(data => displayExperienceData(data))
+        .catch(error => console.error('Error fetching experience data:', error));
+
+    fetch('json/projects.json')
+        .then(response => response.json())
+        .then(data => displayProjectsData(data))
+        .catch(error => console.error('Error fetching projects data:', error));
+
+    fetch('json/achievements.json')
+        .then(response => response.json())
+        .then(data => displayAchievementsData(data))
+        .catch(error => console.error('Error fetching achievements data:', error));
+
 });
 
-// Handle fetching the education data from the JSON file and adding it to the HTML
+// Extract the education data from the json file, then add it to the page
 function displayEducationData(data) {
     const container = document.getElementById('education-container');
-
     data.forEach(school => {
         const schoolDiv = document.createElement('div');
         schoolDiv.classList.add('school');
 
-        const schoolInfo = document.createElement('div');
-        schoolInfo.classList.add('school-info');
+        const schoolNameAndDateContainer = document.createElement('div');
+        schoolNameAndDateContainer.classList.add('school-name-and-date-container');
 
-        const schoolName = document.createElement('div');
+        const schoolName = document.createElement('span');
         schoolName.textContent = school.SchoolName;
         schoolName.classList.add('school-name');
-        schoolInfo.appendChild(schoolName);
+        schoolNameAndDateContainer.appendChild(schoolName);
 
-        const dates = document.createElement('div');
+        const dates = document.createElement('span');
         dates.textContent = school.Dates;
         dates.classList.add('school-dates');
-        schoolInfo.appendChild(dates);
+        schoolNameAndDateContainer.appendChild(dates);
 
-        const degreeInfo = document.createElement('div');
-        degreeInfo.classList.add('degree-info');
+        const degreeAndGpaContainer = document.createElement('div');
+        degreeAndGpaContainer.classList.add('degree-and-gpa-container');
 
-        const degree = document.createElement('div');
+        const degree = document.createElement('span');
         degree.textContent = school.Degree;
         degree.classList.add('school-degree');
-        degreeInfo.appendChild(degree);
+        degreeAndGpaContainer.appendChild(degree);
 
-        const gpa = document.createElement('div');
-        gpa.textContent = `GPA: ${school.GPA.toFixed(2)}`;
+        const gpa = document.createElement('span');
+        gpa.textContent = `GPA: ${school.GPA.toFixed(1)}`;
         gpa.classList.add('school-gpa');
-        degreeInfo.appendChild(gpa);
+        degreeAndGpaContainer.appendChild(gpa);
 
-        schoolDiv.appendChild(schoolInfo);
-        schoolDiv.appendChild(degreeInfo);
+        schoolDiv.appendChild(schoolNameAndDateContainer);
+        schoolDiv.appendChild(degreeAndGpaContainer);
 
         container.appendChild(schoolDiv);
     });
+}
+
+// Extract the experience data from the json file, then add it to the page
+function displayExperienceData(data) {
+    const container = document.getElementById('experience-container');
+    data.forEach(job => {
+        const jobDiv = document.createElement('div');
+        jobDiv.classList.add('job');
+
+        const jobTitleAndDatesContainer = document.createElement('div');
+        jobTitleAndDatesContainer.classList.add('job-title-and-dates-container');
+
+        const role = document.createElement('span');
+        role.textContent = job.role;
+        role.classList.add('job-title');
+        jobTitleAndDatesContainer.appendChild(role);
+
+        const duration = document.createElement('span');
+        duration.textContent = job.duration;
+        duration.classList.add('job-dates');
+        jobTitleAndDatesContainer.appendChild(duration);
+
+        const companyAndLocationContainer = document.createElement('div');
+        companyAndLocationContainer.classList.add('company-and-location-container');
+
+        const company = document.createElement('span');
+        company.textContent = job.company;
+        company.classList.add('job-company');
+        companyAndLocationContainer.appendChild(company);
+
+        const location = document.createElement('span');
+        location.textContent = job.location;
+        location.classList.add('job-location');
+        companyAndLocationContainer.appendChild(location);
+
+        jobDiv.appendChild(jobTitleAndDatesContainer);
+        jobDiv.appendChild(companyAndLocationContainer);
+
+        const dutiesList = document.createElement('ul');
+        dutiesList.classList.add('job-duties');
+        job.duties.forEach(duty => {
+            const dutyItem = document.createElement('li');
+            dutyItem.textContent = duty;
+            dutiesList.appendChild(dutyItem);
+        });
+
+        jobDiv.appendChild(dutiesList);
+        container.appendChild(jobDiv);
+    });
+}
+
+// Extract the projects data from the json file, then add to the page
+function displayProjectsData(data) {
+    const container = document.getElementById('projects-container');
+    container.innerHTML = '';
+
+    data.forEach(project => {
+        const projectDiv = document.createElement('div');
+        projectDiv.classList.add('project');
+
+        const projectHeader = document.createElement('div');
+        projectHeader.classList.add('project-header');
+
+        const projectName = document.createElement('span');
+        projectName.textContent = project.projectName;
+        projectName.classList.add('project-name');
+        projectHeader.appendChild(projectName);
+
+        // Conditionally add GitHub link if repoLink is provided
+        if (project.repoLink) {
+            const repoLink = document.createElement('a');
+            repoLink.href = project.repoLink;
+            repoLink.target = "_blank";
+            repoLink.innerHTML = '<i class="ci ci-github ci-2x"></i>';
+            projectHeader.appendChild(repoLink);
+        }
+
+        projectDiv.appendChild(projectHeader);
+
+        const skillsUsed = document.createElement('div');
+        skillsUsed.classList.add('skills-used');
+        skillsUsed.innerHTML = `<span class="skills-label">Skills Used: </span>${project.skillsUsed}`;
+        projectDiv.appendChild(skillsUsed);
+
+        const description = document.createElement('p');
+        description.textContent = project.description;
+        description.classList.add('project-description');
+        projectDiv.appendChild(description);
+
+        container.appendChild(projectDiv);
+    });
+}
+
+//Extract the achievements data from the json file, then add it to the page
+function displayAchievementsData(data) {
+    const container = document.getElementById('achievements-container');
+    container.innerHTML = ''; // Clear any existing content
+
+    data.forEach(achievement => {
+        const achievementDiv = document.createElement('div');
+        achievementDiv.classList.add('achievement');
+
+        const achievementName = document.createElement('div');
+        achievementName.textContent = achievement.achievementName;
+        achievementName.classList.add('achievement-name');
+        achievementDiv.appendChild(achievementName);
+
+        const issuer = document.createElement('div');
+        issuer.textContent = achievement.issuer;
+        issuer.classList.add('issuer');
+        achievementDiv.appendChild(issuer);
+
+        const description = document.createElement('div');
+        description.textContent = achievement.description;
+        description.classList.add('description');
+        achievementDiv.appendChild(description);
+
+        container.appendChild(achievementDiv);
+    });
+
+    // Add the icon to the icon section
+    const iconSection = document.getElementById('icon-section');
+    const iconImg = document.createElement('img');
+    iconImg.src = 'https://pwn.college/themes/dojo_theme/static/img/dojo/orange.svg';
+    iconImg.alt = 'Pwn College Icon';
+    iconSection.appendChild(iconImg);
 }

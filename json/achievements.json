@@ -1,14 +1,22 @@
 [
     {
-        "company": "Wells Fargo",
-        "role": "Intern Analyst - Cybersecurity",
-        "duration": "June 2024 - August 2024",
-        "description": "Job description goes here."
+        "achievementName": "Orange Belt",
+        "issuer": "pwn.college",
+        "description": "Awarded an Orange Belt from pwn.college, which consisted of completing CTF challenges involving communicating with web servers via HTTP; utilizing x86-64 assembly to write an HTTP server; using tools like gdb, IDA, Ghidra, and Angr Management to reverse engineer binaries; intercepting and manipulating network communication, from connecting to remote hosts to performing man-in-the-middle attacks; solving various cryptography challenges ranging from decoding base64 data to performing simplified TLS handshakes; exploiting various access control issues for the UNIX Discretionary Access Control model; exploiting various web security vulnerabilities such as path traversal, command injection, authentication bypass, SQL injection, XSS, and CSRF; and exploiting binary programs via SUID binary abuse, shellcode injection, and stack buffer overflows."
     },
     {
-        "company": "CVS Health",
-        "role": "Software Engineering Intern",
-        "duration": "May 2023 - August 2023",
-        "description": "Job description goes here."
+        "achievementName": "Dean's List - Spring 2024",
+        "issuer": "Arizona State University - Fulton College of Engineering",
+        "description": "Recognized on the Dean's List for achieving a term GPA of 3.5 or higher while taking 12 or more credits."
+    },
+    {
+        "achievementName": "Dean's List - Fall 2023",
+        "issuer": "Arizona State University - Fulton College of Engineering",
+        "description": "Recognized on the Dean's List for achieving a term GPA of 3.5 or higher while taking 12 or more credits."
+    },
+    {
+        "achievementName": "Dean's List - Spring 2023",
+        "issuer": "Arizona State University - Fulton College of Engineering",
+        "description": "Recognized on the Dean's List for achieving a term GPA of 3.5 or higher while taking 12 or more credits."
     }
 ]

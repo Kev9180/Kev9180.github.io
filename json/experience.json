@@ -1,14 +1,33 @@
 [
     {
-        "company": "Wells Fargo",
         "role": "Intern Analyst - Cybersecurity",
         "duration": "June 2024 - August 2024",
-        "description": "Job description goes here."
+        "company": "Wells Fargo",
+        "location": "Chandler, AZ",
+        "duties": [
+            "Just started this position - standby for more detailed info!"
+        ]
     },
     {
-        "company": "CVS Health",
         "role": "Software Engineering Intern",
         "duration": "May 2023 - August 2023",
-        "description": "Job description goes here."
+        "company": "CVS Health",
+        "location": "Phoenix, AZ",
+        "duties": [
+            "Created a JSON data source to dynamically populate content for a medical symptom web-page in Angular. Performed rigorous accessibility and unit testing; achieved successful deployment to production environment.",
+            "Collaborated with eight fellow interns to develop a company-wide recycling improvement initiative, demonstrating strong coordination skills by scheduling meetings, liaising with project leads, and facilitating discussions to ensure project milestones were met.",
+            "Developed an Angular template to handle code migration from ATG BCC codebase to Angular codebase; created template that handled information retrieval, display, and styling for 54 clinic affiliate web pages."
+        ]
+    },
+    {
+        "role": "NCOIC - Aircraft Operations and Section Training",
+        "duration": "March 2014 - August 2022",
+        "company":  "United States Air Force",
+        "location": "Various",
+        "duties": [
+            "Instructed 1.5K Air Force and US Government personnel on cargo preparation/pallet build-up, increment monitor, and vehicle training; developed course training plans and conducted periodic course material reviews.",
+            "Authored a 40-hour new employee training and onboarding course and administered course to 45 Airmen, increasing contract completion rate and resulting in zero project delays or security incidents.",
+            "Certified airworthiness and safely on-loaded the $10B James Webb Space Telescope as the Lead Joint Inspector and Load Team Chief; 16-hour safety and airworthiness inspection, 8-hour aircraft cargo upload."
+        ]
     }
 ]

@@ -132,6 +132,7 @@ section h2 {
     display: flex;
     flex-direction: row;
     justify-content: left;
+    flex-wrap: wrap;
 }
 
 .home-header, .home-header-name {
@@ -187,15 +188,11 @@ li {
     margin-bottom: 2rem;
 }
 
-.school-info, .degree-info {
+.school-name-and-date-container, .degree-and-gpa-container {
     display: flex;
     justify-content: space-between;
     width: 100%;
     padding: 0.4%;
-}
-
-.school-info {
-    margin-bottom: 0.5rem;
 }
 
 .school-name {
@@ -218,6 +215,135 @@ li {
     font-weight: 500;
 }
 
+/* EXPERIENCE SECTION */
+#experience-container {
+    margin-top: 1rem;
+}
+
+.job {
+    margin-bottom: 2rem;
+}
+
+.job-title-and-dates-container, .company-and-location-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0.4%;
+    font-weight: 500;
+}
+
+.job-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: maroon;
+}
+
+.job-dates {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: orange;
+}
+
+.job-location {
+    font-size: 1rem;
+    color: #555;
+    text-align: right;
+}
+
+.job-duties {
+    list-style-type: disc;
+    margin-left: 1.5rem;
+}
+
+.job-duties li {
+    margin-bottom: 0.5rem;
+}
+
+
+/* PROJECTS SECTION */
+#projects-container {
+    margin-top: 1rem;
+}
+
+.project {
+    margin-bottom: 2rem;
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.project-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: maroon;
+}
+
+.skills-used {
+    margin-bottom: 0.5rem;
+    color: black;
+    font-weight: 500;
+}
+
+.skills-label {
+    font-size: 1.2rem;
+    color: orange;
+    font-weight: 600;
+}
+
+.project-description {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #333;
+}
+
+/* ACHIEVEMENTS SECTION */
+#achievements-container {
+    margin-top: 1rem;
+}
+
+.achievement {
+    margin-bottom: 2rem;
+}
+
+.achievement-name {
+    color: maroon;
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.issuer {
+    color: orange;
+    font-size: 1.0em;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.description {
+    font-weight: 400;
+}
+
+/* CONTACT SECTION */
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 1rem;
+    margin-left: 0.65vh;
+}
+
+#contact-section p {
+    margin-bottom: 0.5rem;
+}
+
+#credits-section p {
+    margin-top: 1rem;
+    margin-left: 0.65vh;
+}
 
 /* Responsive adjustments for smaller screens and non-desktop applications */
 @media (max-width: 768px) {
@@ -293,15 +419,10 @@ li {
         font-size: 2rem;
     }    
 
-    .school-info {
+    .school-name-and-date-container, .degree-and-gpa-container {
         flex-direction: column;
         align-items: flex-start;
         margin-bottom: 0;
-    }
-
-    .degree-info {
-        flex-direction: column;
-        align-items: flex-start;
     }
 
     .school-name {
@@ -322,8 +443,47 @@ li {
     .school-degree, .school-gpa {
         color: black;
         font-weight: 500;
-    }    
-    
+    }
+
+    .job-title-and-dates-container, .company-and-location-container {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 0;
+    }
+
+    .job-title {
+        font-size: 1.0rem;
+        color: maroon;
+        flex: 1;
+        font-weight: 600;
+    }
+
+    .job-dates {
+        font-size: 1.0rem;
+        text-align: right;
+        flex: 1;
+        color: orange;
+        font-weight: 600;
+    }
+
+    .job-company {
+        font-size: 1.0rem;
+        font-weight: 600;
+    }
+
+    .job-location {
+        font-size: 1.0rem;
+        color: #555;
+        text-align: right;
+    }
+
+    .job-duties {
+        margin-left: 1.5rem;
+    }
+
+    .job-duties li {
+        margin-bottom: 0.5rem;
+    }
 }
 
 @media (max-width: 480px) {
