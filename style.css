@@ -128,28 +128,28 @@ section h2 {
 }
 
 /* HOME SECTION */
-.home-header-container {
+.about-header-container {
     display: flex;
     flex-direction: row;
     justify-content: left;
     flex-wrap: wrap;
 }
 
-.home-header, .home-header-name {
+.about-header, .about-header-name {
     font-weight: 700;
     font-size: 5rem;
     margin-right: 1rem;
 }
 
-.home-header {
+.about-header {
     color: maroon;
 }
 
-.home-header-name {
+.about-header-name {
     color: orange;
 }
 
-.home-subheader {
+.about-subheader {
     font-weight: 500;
     font-size: 1rem;
 
@@ -362,7 +362,7 @@ li {
         padding: 0 20px;
         background-image: none;
         background-color: #275890;
-        /* key = 2314 */
+        /* cDItcDE9cDM7IHAyK3AzPXA0OyBwMj0z */
     }
 
     .header-selfie {
@@ -402,12 +402,12 @@ li {
         display: flex;
     }
 
-    .home-header-container {
+    .about-header-container {
         display: flex;
         flex-direction: column;
     }
     
-    .home-header, .home-header-name {
+    .about-header, .about-header-name {
         font-weight: 700;
         font-size: 3rem;
     }
