@@ -485,6 +485,47 @@ li {
     .job-duties li {
         margin-bottom: 0.5rem;
     }
+
+    .project-name {
+        font-size: 1.0rem;
+        font-weight: 600;
+        color: maroon;
+    }
+    
+    .skills-used {
+        margin-bottom: 0.5rem;
+        color: black;
+        font-weight: 500;
+    }
+    
+    .skills-label {
+        font-size: 1.0rem;
+        color: orange;
+        font-weight: 600;
+    }
+
+    .achievement-name {
+        color: maroon;
+        font-size: 1.0em;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+    }
+    
+    .issuer {
+        color: orange;
+        font-size: 1.0em;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+    }
+    
+    /* CONTACT SECTION */
+    .contact-container {
+        margin-left: 0.3vh;
+    }
+
+    #credits-section p {
+        margin-left: 0.2vh;
+    }
 }
 
 @media (max-width: 480px) {
