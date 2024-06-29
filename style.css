@@ -259,6 +259,31 @@ li {
     margin-bottom: 0.5rem;
 }
 
+/* PROFICIENCIES SECTION */
+#skills-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 1rem;
+    margin-left: 0.5vh;
+}
+
+.skill-category {
+    margin-bottom: 2rem;
+}
+
+.skill-category h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: maroon;
+    margin-bottom: 0.5rem;
+}
+
+.skills-list {
+    font-size: 1rem;
+    color: #333;
+    font-weight: 500;
+}
 
 /* PROJECTS SECTION */
 #projects-container {
@@ -267,6 +292,7 @@ li {
 
 .project {
     margin-bottom: 2rem;
+    margin-left: 0.4vh;
 }
 
 .project-header {
@@ -485,6 +511,13 @@ li {
     .job-duties li {
         margin-bottom: 0.5rem;
     }
+
+    .skill-category h3 {
+        font-size: 1.0rem;
+        font-weight: 600;
+        color: maroon;
+        margin-bottom: 0.5rem;
+    }    
 
     .project-name {
         font-size: 1.0rem;

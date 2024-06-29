@@ -33,6 +33,10 @@ document.addEventListener("DOMContentLoaded", function() {
         .then(data => displayAchievementsData(data))
         .catch(error => console.error('Error fetching achievements data:', error));
 
+    fetch('json/skills.json')
+        .then(response => response.json())
+        .then(data => displaySkillsData(data))
+        .catch(error => console.error('Error fetching skills data:', error));
 });
 
 // Extract the education data from the json file, then add it to the page
@@ -192,11 +196,34 @@ function displayAchievementsData(data) {
 
         container.appendChild(achievementDiv);
     });
+}
 
-    // Add the icon to the icon section
-    const iconSection = document.getElementById('icon-section');
-    const iconImg = document.createElement('img');
-    iconImg.src = 'https://pwn.college/themes/dojo_theme/static/img/dojo/orange.svg';
-    iconImg.alt = 'Pwn College Icon';
-    iconSection.appendChild(iconImg);
+// Extract the skills data from the json file, then add it to the page
+function displaySkillsData(data) {
+    const container = document.getElementById('skills-container');
+    const categoryNames = {
+        languages: "Languages",
+        frameworks: "Frameworks",
+        databases: "Databases",
+        cloudPlatforms: "Cloud Platforms",
+        devTools: "Developer Tools"
+    };
+
+    for (const category in data) {
+        if (data.hasOwnProperty(category)) {
+            const categoryDiv = document.createElement('div');
+            categoryDiv.classList.add('skill-category');
+
+            const categoryHeader = document.createElement('h3');
+            categoryHeader.textContent = categoryNames[category] || category;
+            categoryDiv.appendChild(categoryHeader);
+
+            const skillsList = document.createElement('p');
+            skillsList.classList.add('skills-list');
+            skillsList.textContent = data[category];
+            categoryDiv.appendChild(skillsList);
+
+            container.appendChild(categoryDiv);
+        }
+    }
 }
