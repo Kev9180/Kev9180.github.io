@@ -1,7 +1,7 @@
 {
-    "languages": "C/C++, Java, JavaScript, Python, Swift, Bash, TypeScript, YARA-L, HTML/CSS, x86_64, JavaFX, OCaml, Scheme",
+    "languages": "C/C++, Java, JavaScript, Python, Swift, Bash, TypeScript, YARA, HTML/CSS, x86_64, JavaFX, OCaml, Scheme",
     "frameworks": "Angular, SwiftUI, Node.js, Express",
-    "databases": "MongoDB, SQLite, Elasticsearch",
+    "databases": "MongoDB, SQLite, ElasticSearch",
     "cloudPlatforms": "Google Cloud Platform",
     "devTools": "Git, GitHub/GitLab, CircleCI, Harness, Jenkins, npm, Docker, Linux, Wireshark, Google SecOps, Chronicle SIEM, IDA, Binary Ninja, Icarus Verilog, Jira, Confluence, Trello, Miro"
 }
