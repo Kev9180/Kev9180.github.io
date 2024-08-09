@@ -5,7 +5,10 @@
         "company": "Wells Fargo",
         "location": "Chandler, AZ",
         "duties": [
-            "Just started this position - standby for more detailed info!"
+            "Conducted a comprehensive analysis of a phishing email incident, identifying malicious URLs through FireEye and Proofpoint alerts. Determined no credentials were harvested by tracing DNS queries and sandbox testing redirects, leading to the blocking of malicious domains and URLs, and implementing targeted user awareness training.",
+            "Investigated a web data exfiltration alert triggered by suspicious traffic to an unapproved domain, identifying a high outbound data transfer ratio. Verified the domain's legitimacy through previous case reference and escalated to Tier 2 with recommended tuning actions to prevent future false positives.",
+            "Gained hands-on experience in a tiered SOC environment by shadowing CTFC members, observing the investigation and resolution of various cases, including cloud-related incidents, and enhancing knowledge of SOC operations and workflows.",
+            "Led a strategic initiative within the Digital Product Management team by conducting 36 interviews across the cyber defense organization to identify operational gaps and pain-points. Analyzed the collected data and presented actionable insights to the Digital Product Management Director, contributing to the development of a 3-year strategic plan to address key challenges."
         ]
     },
     {
