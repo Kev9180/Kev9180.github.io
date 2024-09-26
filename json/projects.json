@@ -1,5 +1,11 @@
 [
     {
+        "projectName": "Yan85 Assembler - Python Assembler for a Custom Architecture",
+        "repoLink": "https://github.com/Kev9180/Yan85-Assembler",
+        "skillsUsed": "Python, IDA, Binary Ninja, GDB, Linux, Reverse Engineering, Static/Dynamic Analysis",
+        "description": "Yan85 is a custom architecture used in several modules and challenges on pwn.college, an educational platform that teaches cybersecurity concepts via CTF challenges. Yan85 uses custom opcodes, registers, and syscalls that need to be reverse engineered using a static and/or dynamic analysis tools such as GDB, IDA, Binary Ninja, and more. I wanted to make a simple assembler that would make this process easier by automating some of the leg-work. My assembler takes custom written \"yancode\", re-adjusts the order of the bytes (if necessary), and converts that code to bytecode before sending that bytecode into the challene binary. I plan on adding more functionality in the future as I come across more Yan85 challenges, such as making a disassembler and a full-on emulator. This was definitely a fun one!"
+    },
+    {
         "projectName": "Personal Website (You're looking at it!)",
         "repoLink": "https://github.com/Kev9180/Kev9180.github.io",
         "skillsUsed": "JavaScript, HTML, CSS, JSON, Git, GitHub, GitHub Pages",
