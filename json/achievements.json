@@ -1,5 +1,10 @@
 [
     {
+        "achievementName": "Yellow Belt",
+        "issuer": "pwn.college",
+        "description": "Awarded a Yellow Belt from pwn.college after completing 110 challenges across four modules: Shellcode Injection, Reverse Engineering, Memory Errors, and Program Exploitation. This included reverse engineering a custom architecture known as Yan85, designing an assembler for it, and developing expertise in crafting and injecting shellcode. Challenges involved static and dynamic analysis using tools such as IDA, Binary Ninja, and gdb, exploiting memory vulnerabilities like buffer overflows, and manipulating program execution to bypass defenses."
+    },
+    {
         "achievementName": "Orange Belt",
         "issuer": "pwn.college",
         "description": "Awarded an Orange Belt from pwn.college, which consisted of completing CTF challenges involving communicating with web servers via HTTP; utilizing x86-64 assembly to write an HTTP server; using tools like gdb, IDA, Ghidra, and Angr Management to reverse engineer binaries; intercepting and manipulating network communication, from connecting to remote hosts to performing man-in-the-middle attacks; solving various cryptography challenges ranging from decoding base64 data to performing simplified TLS handshakes; exploiting various access control issues for the UNIX Discretionary Access Control model; exploiting various web security vulnerabilities such as path traversal, command injection, authentication bypass, SQL injection, XSS, and CSRF; and exploiting binary programs via SUID binary abuse, shellcode injection, and stack buffer overflows."
