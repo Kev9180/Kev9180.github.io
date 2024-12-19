@@ -68,7 +68,10 @@ function displayEducationData(data) {
         degreeAndGpaContainer.appendChild(degree);
 
         const gpa = document.createElement('span');
-        gpa.textContent = `GPA: ${school.GPA.toFixed(1)}`;
+        gpa.textContent = `GPA: ${
+            // whole nums should be displayed to 1 decimal place, otherwise 2 decimal places
+            Number.isInteger(school.GPA) ? school.GPA.toFixed(1) : school.GPA.toFixed(2)
+        }`;
         gpa.classList.add('school-gpa');
         degreeAndGpaContainer.appendChild(gpa);
 
