@@ -1,5 +1,11 @@
 [
     {
+        "projectName": "AV-B/DFS",
+        "repoLink": "https://github.com/Kev9180/AudioBDFS",
+        "skillsUsed": "Python, PyAudio, NumPy, Termcolor, Data Structures and Algorithms, Git, GitHub",
+        "description": "AV-B/DFS is an interactive application that visualizes Binary Search Tree (BST) traversal algorithms while incorporating musical feedback for a unique learning experience. The tool allows users to input or generate random data, which is mapped to musical notes and structured into a BST. As traversal algorithms like Breadth-First Search (BFS) or Depth-First Search (DFS) are performed, each visited node plays its corresponding note, providing real-time audio and visual feedback. I implemented balanced tree construction, support for common traversal algorithms (in-order, pre-order, post-order), and interactive menu-driven functionality to enhance user engagement. Additionally, the program dynamically renders the BST structure in a readable format, synchronizing traversal order with audio playback to reinforce algorithmic concepts."
+    },
+    {
         "projectName": "Yan85 Assembler - Python Assembler for a Custom Architecture",
         "repoLink": "https://github.com/Kev9180/Yan85-Assembler",
         "skillsUsed": "Python, IDA, Binary Ninja, GDB, Linux, Reverse Engineering, Static/Dynamic Analysis",
