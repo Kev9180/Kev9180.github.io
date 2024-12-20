@@ -17,6 +17,9 @@ p {
     font-weight: 500;
 }
 
+/* --------------------------------------------------------
+HEADER
+-------------------------------------------------------- */
 header {
     position: fixed;
     left: 0;
@@ -100,7 +103,9 @@ header {
     text-align: center;
 }
 
-/* Hamburger menu styles */
+/* --------------------------------------------------------
+HAMBURGER MENU
+-------------------------------------------------------- */
 .hamburger-menu {
     display: none;
     cursor: pointer;
@@ -111,6 +116,60 @@ header {
     color: #fff;
 }
 
+/* --------------------------------------------------------
+DARKMODE
+-------------------------------------------------------- */
+/* Links */
+body.dark-mode a {
+    color: #adacac;
+}
+
+/* Hover states for links should maintain accessibility */
+body.dark-mode .header-nav-container a:hover {
+    color: #03DAC5; /* Secondary accent color */
+}
+
+/* Headings or Accents */
+body.dark-mode h2,
+body.dark-mode .about-header,
+body.dark-mode .project-name,
+body.dark-mode .school-name,
+body.dark-mode .job-title {
+    color: #FFC627; 
+}
+
+body.dark-mode .school-dates,
+body.dark-mode .job-dates {
+    color: #03DAC5;
+}
+
+body.dark-mode p,
+body.dark-mode li,
+body.dark-mode .skills-list,
+body.dark-mode .description {
+    color: #E0E0E0; 
+}
+
+body.dark-mode section {
+    background-color: #1b1b1b;
+    border-bottom: 1px solid #333; /* subtle divider in dark mode */
+}
+
+/* body.dark-mode #education-container,
+body.dark-mode #experience-container,
+body.dark-mode #projects-container,
+body.dark-mode #achievements-container,
+body.dark-mode #skills-container {
+    background-color: #292929;
+} */
+
+/* body.dark-mode main {
+    background-color: #2e2c2c;
+} */
+
+/* --------------------------------------------------------
+MAIN AND SECTIONS
+-------------------------------------------------------- */
 main {
     margin-left: 18vw;
     width: 100%;
@@ -127,7 +186,9 @@ section h2 {
     font-size: 4rem;
 }
 
-/* HOME SECTION */
+/* --------------------------------------------------------
+HOME SECTION
+-------------------------------------------------------- */
 .about-header-container {
     display: flex;
     flex-direction: row;
@@ -179,7 +240,9 @@ li {
     margin-bottom: 1rem;
 }
 
-/* EDUCATION SECTION */
+/* --------------------------------------------------------
+EDUCATION SECTION
+-------------------------------------------------------- */
 #education-container {
     margin-top: 1rem;
 }
@@ -215,7 +278,9 @@ li {
     font-weight: 500;
 }
 
-/* EXPERIENCE SECTION */
+/* --------------------------------------------------------
+EXPERIENCE SECTION
+-------------------------------------------------------- */
 #experience-container {
     margin-top: 1rem;
 }
@@ -259,7 +324,9 @@ li {
     margin-bottom: 0.5rem;
 }
 
-/* PROFICIENCIES SECTION */
+/* --------------------------------------------------------
+PROFICIENCIES SECTION
+-------------------------------------------------------- */
 #skills-container {
     display: flex;
     flex-direction: column;
@@ -285,7 +352,9 @@ li {
     font-weight: 500;
 }
 
-/* PROJECTS SECTION */
+/* --------------------------------------------------------
+PROJECTS SECTION
+-------------------------------------------------------- */
 #projects-container {
     margin-top: 1rem;
 }
@@ -326,7 +395,9 @@ li {
     color: #333;
 }
 
-/* ACHIEVEMENTS SECTION */
+/* --------------------------------------------------------
+ACHIEVEMENTS SECTION
+-------------------------------------------------------- */
 #achievements-container {
     margin-top: 1rem;
 }
@@ -353,7 +424,9 @@ li {
     font-weight: 400;
 }
 
-/* CONTACT SECTION */
+/* --------------------------------------------------------
+CONTACT SECTION
+-------------------------------------------------------- */
 .contact-container {
     display: flex;
     flex-direction: column;
@@ -371,7 +444,9 @@ li {
     margin-left: 0.65vh;
 }
 
-/* Responsive adjustments for smaller screens and non-desktop applications */
+/* --------------------------------------------------------
+RESPONSIVENESS SECTION - Adjust sizes based on user device
+-------------------------------------------------------- */
 @media (max-width: 768px) {
     main {
         margin-top: 6vh;

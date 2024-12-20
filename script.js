@@ -4,6 +4,31 @@ let secret2 = 'SSdt'
 let secret3 = 'IGhp'
 let secret4 = 'IQ=='
 
+// Handle dark mode settings
+document.addEventListener("DOMContentLoaded", function() {
+    // Existing code...
+
+    const darkModeToggle = document.querySelector(".darkmode-toggle");
+    const body = document.body;
+
+    // Check localStorage for dark mode preference
+    if (localStorage.getItem('darkMode') === 'enabled') {
+        body.classList.add('dark-mode');
+        darkModeToggle.classList.replace('ci-moon', 'ci-sun'); // If you want a sun icon for light mode
+    }
+
+    darkModeToggle.addEventListener("click", function() {
+        body.classList.toggle('dark-mode');
+        if (body.classList.contains('dark-mode')) {
+            localStorage.setItem('darkMode', 'enabled');
+            darkModeToggle.classList.replace('ci-moon', 'ci-sun'); 
+        } else {
+            localStorage.setItem('darkMode', 'disabled');
+            darkModeToggle.classList.replace('ci-sun', 'ci-moon');
+        }
+    });
+});
+
 // On page load, set up a listener for the menu button and fetch all the appropriate json files
 document.addEventListener("DOMContentLoaded", function() {
     const hamburgerMenu = document.querySelector(".hamburger-menu");
