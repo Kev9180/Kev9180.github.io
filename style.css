@@ -47,7 +47,7 @@ header {
 .header-selfie {
     object-fit: cover;
     object-position: center 30%;
-    width: 20vw;
+    width: 15vw;
     height: auto;
     max-width: 100%;
     border-radius: 50%;
