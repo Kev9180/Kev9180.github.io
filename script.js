@@ -4,29 +4,39 @@ let secret2 = 'SSdt'
 let secret3 = 'IGhp'
 let secret4 = 'IQ=='
 
-// Handle dark mode settings
 document.addEventListener("DOMContentLoaded", function() {
-    // Existing code...
-
     const darkModeToggle = document.querySelector(".darkmode-toggle");
     const body = document.body;
 
     // Check localStorage for dark mode preference
     if (localStorage.getItem('darkMode') === 'enabled') {
         body.classList.add('dark-mode');
-        darkModeToggle.classList.replace('ci-moon', 'ci-sun'); // If you want a sun icon for light mode
+        invertGithubIcons(true);
     }
 
     darkModeToggle.addEventListener("click", function() {
         body.classList.toggle('dark-mode');
-        if (body.classList.contains('dark-mode')) {
+        const isDarkMode = body.classList.contains('dark-mode');
+        if (isDarkMode) {
             localStorage.setItem('darkMode', 'enabled');
-            darkModeToggle.classList.replace('ci-moon', 'ci-sun'); 
+            invertGithubIcons(true);
         } else {
             localStorage.setItem('darkMode', 'disabled');
-            darkModeToggle.classList.replace('ci-sun', 'ci-moon');
+            invertGithubIcons(false);
         }
     });
+
+    function invertGithubIcons(enable) {
+        // Select all GitHub icons
+        const githubIcons = document.querySelectorAll('.ci-github');
+        githubIcons.forEach(icon => {
+            if (enable) {
+                icon.classList.add('ci-invert');
+            } else {
+                icon.classList.remove('ci-invert');
+            }
+        });
+    }
 });
 
 // On page load, set up a listener for the menu button and fetch all the appropriate json files
@@ -196,6 +206,11 @@ function displayProjectsData(data) {
 
         container.appendChild(projectDiv);
     });
+
+    // After dynamically inserting the icons, invert them if currently in dark mode
+    if (document.body.classList.contains('dark-mode')) {
+        invertGithubIcons(true);
+    }    
 }
 
 //Extract the achievements data from the json file, then add it to the page

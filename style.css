@@ -119,28 +119,38 @@ HAMBURGER MENU
 /* --------------------------------------------------------
 DARKMODE
 -------------------------------------------------------- */
-/* Links */
+body.dark-mode header {
+    background-image: url('/assets/galaxy.jpg');
+    background-size:cover;
+    background-position:top;
+}
+
+body.dark-mode .header-name {
+    color: #e0e0e0;
+}
+
 body.dark-mode a {
-    color: #adacac;
+    color: #e7beff;
 }
 
-/* Hover states for links should maintain accessibility */
 body.dark-mode .header-nav-container a:hover {
-    color: #03DAC5; /* Secondary accent color */
+    color: #00A3E0; /* Secondary accent color */
 }
 
-/* Headings or Accents */
-body.dark-mode h2,
+body.dark-mode h2 {
+    color:#FFC627;
+}
+
 body.dark-mode .about-header,
 body.dark-mode .project-name,
 body.dark-mode .school-name,
 body.dark-mode .job-title {
-    color: #FFC627; 
+    color: #8C1D40; 
 }
 
 body.dark-mode .school-dates,
 body.dark-mode .job-dates {
-    color: #03DAC5;
+    color: #FFC627;
 }
 
 body.dark-mode p,
@@ -151,21 +161,28 @@ body.dark-mode .description {
 }
 
 body.dark-mode section {
-    background-color: #1b1b1b;
+    background-color: #121212;
     border-bottom: 1px solid #333; /* subtle divider in dark mode */
 }
 
-/* body.dark-mode #education-container,
+body.dark-mode #education-container,
 body.dark-mode #experience-container,
+body.dark-mode #experience-container .job-location,
 body.dark-mode #projects-container,
-body.dark-mode #achievements-container,
+body.dark-mode #achievements-container .issuer,
 body.dark-mode #skills-container {
-    background-color: #292929;
-} */
+    color: #4AB7C4;
+}
 
-/* body.dark-mode main {
-    background-color: #2e2c2c;
-} */
+body.dark-mode .degree-and-gpa-container .school-degree,
+body.dark-mode .degree-and-gpa-container .school-gpa,
+body.dark-mode #projects-container .skills-used {
+    color: #4AB7C4;
+}
+
+body.dark-mode main {
+    background-color: #121212;
+}
 
 /* --------------------------------------------------------
 MAIN AND SECTIONS
