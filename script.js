@@ -4,41 +4,42 @@ let secret2 = 'SSdt'
 let secret3 = 'IGhp'
 let secret4 = 'IQ=='
 
-document.addEventListener("DOMContentLoaded", function() {
-    const darkModeToggle = document.querySelector(".darkmode-toggle");
+// Dark mode setup
+document.addEventListener("DOMContentLoaded", () => {
     const body = document.body;
-
-    // Check localStorage for dark mode preference
-    if (localStorage.getItem('darkMode') === 'enabled') {
-        body.classList.add('dark-mode');
-        invertGithubIcons(true);
+    const darkModeToggle = document.querySelector(".darkmode-toggle");
+    const iconToggle = document.getElementById("icon-light");
+  
+    // On page load, see if localStorage says dark mode was enabled
+    if (localStorage.getItem("darkMode") === "enabled") {
+      body.classList.add("dark-mode");
+      iconToggle.textContent = "dark_mode";     // Update icon to dark mode 
+    } else {
+      iconToggle.textContent = "light_mode";    // Update icon to light mode
     }
-
-    darkModeToggle.addEventListener("click", function() {
-        body.classList.toggle('dark-mode');
-        const isDarkMode = body.classList.contains('dark-mode');
-        if (isDarkMode) {
-            localStorage.setItem('darkMode', 'enabled');
-            invertGithubIcons(true);
-        } else {
-            localStorage.setItem('darkMode', 'disabled');
-            invertGithubIcons(false);
-        }
+  
+    // Add click event to the entire container (or pick an icon to trigger)
+    darkModeToggle.addEventListener("click", () => {
+      const isDarkMode = body.classList.toggle("dark-mode");
+      if (isDarkMode) {
+        localStorage.setItem("darkMode", "enabled");
+        iconToggle.textContent = "dark_mode";
+        invertGithubIcons(true);
+      } else {
+        localStorage.setItem("darkMode", "disabled");
+        iconToggle.textContent = "light_mode";
+        invertGithubIcons(false);
+      }
     });
-
+  
     function invertGithubIcons(enable) {
-        // Select all GitHub icons
-        const githubIcons = document.querySelectorAll('.ci-github');
-        githubIcons.forEach(icon => {
-            if (enable) {
-                icon.classList.add('ci-invert');
-            } else {
-                icon.classList.remove('ci-invert');
-            }
-        });
+      const githubIcons = document.querySelectorAll(".ci-github");
+      githubIcons.forEach(icon => {
+        icon.classList.toggle("ci-invert", enable);
+      });
     }
 });
-
+  
 // On page load, set up a listener for the menu button and fetch all the appropriate json files
 document.addEventListener("DOMContentLoaded", function() {
     const hamburgerMenu = document.querySelector(".hamburger-menu");

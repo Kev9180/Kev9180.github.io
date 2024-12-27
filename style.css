@@ -119,6 +119,17 @@ HAMBURGER MENU
 /* --------------------------------------------------------
 DARKMODE
 -------------------------------------------------------- */
+.darkmode-toggle .material-symbols-outlined {
+    color: #000; /* Default: black for light mode */
+    cursor: pointer;
+    margin: 0 5px; /* Some spacing between icons */
+}
+  
+/* When body has the "dark-mode" class, override to white */
+body.dark-mode .darkmode-toggle .material-symbols-outlined {
+    color: #fff;
+}
+  
 body.dark-mode header {
     background-image: url('/assets/galaxy.jpg');
     background-size:cover;
@@ -462,7 +473,7 @@ CONTACT SECTION
 }
 
 /* --------------------------------------------------------
-RESPONSIVENESS SECTION - Adjust sizes based on user device
+RESPONSIVENESS - Dynamic resizing
 -------------------------------------------------------- */
 @media (max-width: 768px) {
     main {
@@ -479,7 +490,7 @@ RESPONSIVENESS SECTION - Adjust sizes based on user device
         align-items: center;
         padding: 0 20px;
         background-image: none;
-        background-color: #275890;
+        background-color: #00A3E0;
         /* cDItcDE9cDM7IHAyK3AzPXA0OyBwMj0z */
     }
 
@@ -496,9 +507,28 @@ RESPONSIVENESS SECTION - Adjust sizes based on user device
         left: 0;
         width: 100%;
         max-height: 50vh;
-        background-color: #275890;
+        background-color: #00A3E0;
         overflow-y: auto;
     }
+
+    .darkmode-toggle .material-symbols-outlined {
+        color: #fff;
+    }
+
+    /* -----------------------------
+       Dark mode overrides
+    ----------------------------- */
+    body.dark-mode header {
+        background-color: #121212;
+        background-image: url('/assets/galaxy.jpg');
+        background-size: cover;
+        background-position: top;
+    }
+
+    body.dark-mode .header-nav-container {
+        background-color: #121212;
+    }
+    /* end dark mode overrides */
 
     .header-nav-container a {
         font-size: 1rem;
