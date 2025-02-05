@@ -3,5 +3,5 @@
     "frameworks": "Angular, SwiftUI, Node.js, Express",
     "databases": "SQLite, PostgreSQL, MongoDB, ElasticSearch",
     "cloudPlatforms": "Google Cloud Platform",
-    "devTools": "Git, GitHub/GitLab, CircleCI, Harness, Jenkins, npm, Docker, Linux, Wireshark, Google SecOps/Chronicle SIEM, IDA, Binary Ninja, Icarus Verilog, Jira, Confluence, Trello, Miro, Taiga"
+    "devTools": "Git, GitHub/GitLab, CircleCI, Harness, Jenkins, npm, Docker, Linux, Wireshark, Google SecOps/Chronicle SIEM, IDA, Binary Ninja, Icarus Verilog, Jira, Confluence, Trello, Miro, Taiga, Autopsy, FTK Imager, ProDiscover"
 }
