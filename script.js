@@ -4,6 +4,13 @@ let secret2 = 'SSdt'
 let secret3 = 'IGhp'
 let secret4 = 'IQ=='
 
+function invertGithubIcons(enable) {
+    const githubIcons = document.querySelectorAll(".ci-github");
+    githubIcons.forEach(icon => {
+      icon.classList.toggle("ci-invert", enable);
+    });
+}
+
 // Dark mode setup
 document.addEventListener("DOMContentLoaded", () => {
     const body = document.body;
@@ -14,6 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (localStorage.getItem("darkMode") === "enabled") {
       body.classList.add("dark-mode");
       iconToggle.textContent = "dark_mode";     // Update icon to dark mode 
+      invertGithubIcons(true);
     } else {
       iconToggle.textContent = "light_mode";    // Update icon to light mode
     }
@@ -30,14 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
         iconToggle.textContent = "light_mode";
         invertGithubIcons(false);
       }
-    });
-  
-    function invertGithubIcons(enable) {
-      const githubIcons = document.querySelectorAll(".ci-github");
-      githubIcons.forEach(icon => {
-        icon.classList.toggle("ci-invert", enable);
-      });
-    }
+    });  
 });
   
 // On page load, set up a listener for the menu button and fetch all the appropriate json files

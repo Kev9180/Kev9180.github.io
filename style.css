@@ -155,7 +155,9 @@ body.dark-mode h2 {
 body.dark-mode .about-header,
 body.dark-mode .project-name,
 body.dark-mode .school-name,
-body.dark-mode .job-title {
+body.dark-mode .job-title,
+body.dark-mode .skill-category h3,
+body.dark-mode .achievement-name {
     color: #8C1D40; 
 }
 
