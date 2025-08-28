@@ -1,7 +1,7 @@
 {
-    "languages": "C/C++, Python, x86_64, Bash, Java, JavaScript, HTML/CSS, Swift, TypeScript, YARA-L, JavaFX, Scheme",
+    "languages": "C/C++, Python, x86_64, Bash, Java, JavaScript, HTML/CSS, Swift, TypeScript, JavaFX, Scheme",
     "frameworks": "Angular, SwiftUI, Node.js, Express",
-    "databases": "SQLite, PostgreSQL, MongoDB, ElasticSearch",
+    "databases": "SQLite, PostgreSQL, MongoDB",
     "cloudPlatforms": "Google Cloud Platform",
-    "devTools": "Git, GitHub/GitLab, CircleCI, Harness, Jenkins, npm, Docker, Linux, Wireshark, Google SecOps/Chronicle SIEM, IDA, Binary Ninja, Icarus Verilog, Jira, Confluence, Trello, Miro, Taiga, Autopsy, FTK Imager, ProDiscover"
+    "devTools": "Git, GitHub/GitLab, CircleCI, Harness, Jenkins, npm, Docker, Linux, Wireshark, IDA, Binary Ninja, Icarus Verilog, Jira, Confluence, Trello, Miro, Taiga, Autopsy, FTK Imager, ProDiscover"
 }
