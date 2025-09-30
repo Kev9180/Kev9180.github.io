@@ -1,11 +1,15 @@
 [
     {
-        "role": "Cybersecurity Analyst",
-        "duration": "August 2025 - Present",
+        "role": "Technology Program Analyst – Data Ecosystem Software Engineer",
+        "duration": "August 2025 – Present",
         "company": "Wells Fargo",
         "location": "Chandler, AZ",
         "duties": [
-            "This is a new role - stay tuned for details!"
+            "Contributing to the development of an AI-powered chatbot that enables users to query cybersecurity data in natural language, improving accessibility across the enterprise.",
+            "Implementing a retrieval-augmented generation (RAG) backend using FastAPI, allowing users to upload unstructured files and receive AI-driven insights.",
+            "Building and refining the NL2SQL pipeline, integrating with Tachyon API and Impala to generate, validate, and execute secure SQL queries against large-scale databases.",
+            "Developing features in the React frontend and Node.js middleware to support schema ingestion and conversational query workflows.",
+            "Collaborating with stakeholders and another developer to deliver an innovative solution that balances modern AI capabilities with regulatory and compliance requirements in a major financial institution."
         ]
     },
     {
