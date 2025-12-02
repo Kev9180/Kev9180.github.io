@@ -10,7 +10,7 @@ I created this personal website/portfolio for several reasons:
 ## Features
 - **Smooth Scroll:** Navigating through sections is seamless and smooth, enhancing user experience.
 - **Single Page Layout:** All content is available on a single page, making it easy to access everything without reloading.
-- **Dynamically Relocating Header/Navbar:** The header/navbar adjusts its position dynamically based on screen size.
+- **Dynamically Relocating Header/Navbar:** The header/sidebar/navbar adjusts its position dynamically based on screen size.
 - **Responsive Design:** The website is fully responsive and adjusts to various screen sizes and devices.
 - **JSON Data Integration:** My script.js file extracts data from JSON files, so any future updates will be smooth and seamless.
 - **Secret Easter Egg:** For those of you that want to inspect my code, there's a simple puzzle for you to figure out!
