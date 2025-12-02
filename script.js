@@ -65,6 +65,11 @@ document.addEventListener("DOMContentLoaded", function() {
         .then(data => displayProjectsData(data))
         .catch(error => console.error('Error fetching projects data:', error));
 
+    fetch('json/certifications.json')
+        .then(response => response.json())
+        .then(data => displayCertificationsData(data))
+        .catch(error => console.error('Error fetching certifications data:', error));
+
     fetch('json/achievements.json')
         .then(response => response.json())
         .then(data => displayAchievementsData(data))
@@ -214,6 +219,76 @@ function displayProjectsData(data) {
     if (document.body.classList.contains('dark-mode')) {
         invertGithubIcons(true);
     }    
+}
+
+// Extract the certifications data from the json file, then add it to the page
+function displayCertificationsData(data) {
+    const container = document.getElementById('certifications-container');
+    container.innerHTML = ''; // Clear any existing content
+
+    data.forEach(certification => {
+        const certificationDiv = document.createElement('div');
+        certificationDiv.classList.add('certification');
+
+    // Header row: left column (name + issuer) and right column (badge link)
+    const certificationHeaderRow = document.createElement('div');
+    certificationHeaderRow.classList.add('certification-header-row');
+
+    // Left column (B) - holds name on top and issuer beneath
+    const leftCol = document.createElement('div');
+    leftCol.classList.add('certification-left');
+
+    const nameSpan = document.createElement('span');
+    nameSpan.textContent = certification.certificationName;
+    nameSpan.classList.add('certification-name', 'project-name');
+    leftCol.appendChild(nameSpan);
+
+    const issuerSpan = document.createElement('span');
+    issuerSpan.textContent = certification.issuer;
+    issuerSpan.classList.add('certification-issuer');
+    leftCol.appendChild(issuerSpan);
+
+    certificationHeaderRow.appendChild(leftCol);
+
+    // Right column (C) - badge link, aligned to the right
+    const rightCol = document.createElement('div');
+    rightCol.classList.add('certification-right');
+
+    const badgeLink = document.createElement('a');
+    badgeLink.href = certification.credlyProfileUrl;
+    badgeLink.target = '_blank';
+    badgeLink.rel = 'noopener noreferrer';
+    badgeLink.classList.add('badge-link');
+
+    const badgeImage = document.createElement('img');
+    badgeImage.src = certification.badgeUrl;
+    badgeImage.alt = `${certification.certificationName} badge`;
+    badgeImage.classList.add('certification-badge');
+
+    badgeLink.appendChild(badgeImage);
+    rightCol.appendChild(badgeLink);
+
+    certificationHeaderRow.appendChild(rightCol);
+
+    certificationDiv.appendChild(certificationHeaderRow);
+
+        // Date row (below name)
+        const dateRow = document.createElement('div');
+        dateRow.classList.add('certification-date-row');
+        const dateEarned = document.createElement('span');
+        dateEarned.textContent = certification.dateEarned;
+        dateEarned.classList.add('date-earned');
+        dateRow.appendChild(dateEarned);
+        certificationDiv.appendChild(dateRow);
+
+        // Description row
+        const description = document.createElement('p');
+        description.textContent = certification.description;
+        description.classList.add('certification-description');
+        certificationDiv.appendChild(description);
+
+        container.appendChild(certificationDiv);
+    });
 }
 
 //Extract the achievements data from the json file, then add it to the page
