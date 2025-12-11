@@ -12,7 +12,7 @@
         "description": "Yan85 is a custom architecture used in several modules and challenges on pwn.college, an educational platform that teaches cybersecurity concepts via CTF challenges. Yan85 uses custom opcodes, registers, and syscalls that need to be reverse engineered using a static and/or dynamic analysis tools such as GDB, IDA, Binary Ninja, and more. I wanted to make a simple assembler that would make this process easier by automating some of the leg-work. My assembler takes custom written \"yancode\", re-adjusts the order of the bytes (if necessary), and converts that code to bytecode before sending that bytecode into the challene binary. I plan on adding more functionality in the future as I come across more Yan85 challenges, such as making a disassembler and a full-on emulator. This was definitely a fun one!"
     },
     {
-        "projectName": "Personal Website (You're looking at it!)",
+        "projectName": "Personal Website",
         "repoLink": "https://github.com/Kev9180/Kev9180.github.io",
         "skillsUsed": "JavaScript, HTML, CSS, JSON, Git, GitHub, GitHub Pages",
         "description": "I created my personal website/portfolio as a way to not only keep a central location for all of my experience, projects, and achievements, but to improve my JavaScript, HTML, and CSS skills. I took advantage of the free hosting service made available via GitHub Pages so I can provide a link to website when necessary. I used JSON files to hold my job experience, education, achievements, and projects to make future updates much easier."
