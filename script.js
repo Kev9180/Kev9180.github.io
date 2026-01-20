@@ -300,15 +300,49 @@ function displayAchievementsData(data) {
         const achievementDiv = document.createElement('div');
         achievementDiv.classList.add('achievement');
 
-        const achievementName = document.createElement('div');
-        achievementName.textContent = achievement.achievementName;
-        achievementName.classList.add('achievement-name');
-        achievementDiv.appendChild(achievementName);
+        // Header row: left column (name + issuer) and right column (image link)
+        const achievementHeaderRow = document.createElement('div');
+        achievementHeaderRow.classList.add('achievement-header-row');
 
-        const issuer = document.createElement('div');
+        // Left column - holds name on top and issuer beneath
+        const leftCol = document.createElement('div');
+        leftCol.classList.add('achievement-left');
+
+        const achievementName = document.createElement('span');
+        achievementName.textContent = achievement.achievementName;
+        achievementName.classList.add('achievement-name', 'project-name');
+        leftCol.appendChild(achievementName);
+
+        const issuer = document.createElement('span');
         issuer.textContent = achievement.issuer;
-        issuer.classList.add('issuer');
-        achievementDiv.appendChild(issuer);
+        issuer.classList.add('achievement-issuer');
+        leftCol.appendChild(issuer);
+
+        achievementHeaderRow.appendChild(leftCol);
+
+        // Right column - image link, aligned to the right (only if both imagePath and imageLink exist)
+        if (achievement.imagePath && achievement.imageLink) {
+            const rightCol = document.createElement('div');
+            rightCol.classList.add('achievement-right');
+
+            const imageLink = document.createElement('a');
+            imageLink.href = achievement.imageLink;
+            imageLink.target = '_blank';
+            imageLink.rel = 'noopener noreferrer';
+            imageLink.classList.add('badge-link');
+
+            const image = document.createElement('img');
+            image.src = achievement.imagePath;
+            image.alt = `${achievement.achievementName} badge`;
+            image.classList.add('achievement-badge');
+
+            imageLink.appendChild(image);
+            rightCol.appendChild(imageLink);
+
+            achievementHeaderRow.appendChild(rightCol);
+        }
+
+        achievementDiv.appendChild(achievementHeaderRow);
 
         const description = document.createElement('div');
         description.textContent = achievement.description;

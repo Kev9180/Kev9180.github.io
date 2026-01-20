@@ -2,17 +2,24 @@
     {
         "achievementName": "Green Belt",
         "issuer": "pwn.college",
-        "description": "Awarded a Green Belt from pwn.college after completing 93 challenges across five modules: Sandboxing, Race Conditions, Kernel Security, Microarchitecture Exploitation, and System Exploitation. This achievement included advanced tasks such as isolating and mitigating threats in sandboxed environments, exploiting race conditions to reveal system vulnerabilities, and mastering kernel-level intrusions. The pinnacle challenge involved a deep-dive into microarchitecture exploitation, where I employed the Meltdown exploit to manually traverse page tables and resolve physical addresses, then combined it with cache side channeling to leak the flag byte by byte."
+        "description": "Awarded a Green Belt from pwn.college after completing 93 challenges across five modules: Sandboxing, Race Conditions, Kernel Security, Microarchitecture Exploitation, and System Exploitation. This achievement included advanced tasks such as isolating and mitigating threats in sandboxed environments, exploiting race conditions to reveal system vulnerabilities, and mastering kernel-level intrusions. The pinnacle challenge involved a deep-dive into microarchitecture exploitation, where I employed the Meltdown exploit to manually traverse page tables and resolve physical addresses, then combined it with cache side channeling to leak the flag byte by byte.",
+        "imagePath": "/assets/green_belt.svg",
+        "imageLink": "https://pwn.college/system-security/"
     },
     {
         "achievementName": "Yellow Belt",
         "issuer": "pwn.college",
-        "description": "Awarded a Yellow Belt from pwn.college after completing 110 challenges across four modules: Shellcode Injection, Reverse Engineering, Memory Errors, and Program Exploitation. This included reverse engineering a custom architecture known as Yan85, designing an assembler for it, and developing expertise in crafting and injecting shellcode. Challenges involved static and dynamic analysis using tools such as IDA, Binary Ninja, and gdb, exploiting memory vulnerabilities like buffer overflows, and manipulating program execution to bypass defenses."
+        "description": "Awarded a Yellow Belt from pwn.college after completing 110 challenges across four modules: Shellcode Injection, Reverse Engineering, Memory Errors, and Program Exploitation. This included reverse engineering a custom architecture known as Yan85, designing an assembler for it, and developing expertise in crafting and injecting shellcode. Challenges involved static and dynamic analysis using tools such as IDA, Binary Ninja, and gdb, exploiting memory vulnerabilities like buffer overflows, and manipulating program execution to bypass defenses.",
+        "imagePath": "/assets/yellow_belt.svg",
+        "imageLink": "https://pwn.college/program-security/"
     },
     {
         "achievementName": "Orange Belt",
         "issuer": "pwn.college",
-        "description": "Awarded an Orange Belt from pwn.college, which consisted of completing CTF challenges involving communicating with web servers via HTTP; utilizing x86-64 assembly to write an HTTP server; using tools like gdb, IDA, Ghidra, and Angr Management to reverse engineer binaries; intercepting and manipulating network communication, from connecting to remote hosts to performing man-in-the-middle attacks; solving various cryptography challenges ranging from decoding base64 data to performing simplified TLS handshakes; exploiting various access control issues for the UNIX Discretionary Access Control model; exploiting various web security vulnerabilities such as path traversal, command injection, authentication bypass, SQL injection, XSS, and CSRF; and exploiting binary programs via SUID binary abuse, shellcode injection, and stack buffer overflows."
+        "description": "Awarded an Orange Belt from pwn.college, which consisted of completing CTF challenges involving communicating with web servers via HTTP; utilizing x86-64 assembly to write an HTTP server; using tools like gdb, IDA, Ghidra, and Angr Management to reverse engineer binaries; intercepting and manipulating network communication, from connecting to remote hosts to performing man-in-the-middle attacks; solving various cryptography challenges ranging from decoding base64 data to performing simplified TLS handshakes; exploiting various access control issues for the UNIX Discretionary Access Control model; exploiting various web security vulnerabilities such as path traversal, command injection, authentication bypass, SQL injection, XSS, and CSRF; and exploiting binary programs via SUID binary abuse, shellcode injection, and stack buffer overflows.",
+        "imagePath": "/assets/orange_belt.svg",
+        "imageLink": "https://pwn.college/intro-to-cybersecurity/"
+
     },
     {
         "achievementName": "Dean's List",

@@ -182,7 +182,7 @@ body.dark-mode #education-container,
 body.dark-mode #experience-container,
 body.dark-mode #experience-container .job-location,
 body.dark-mode #projects-container,
-body.dark-mode #achievements-container .issuer,
+body.dark-mode #achievements-container .achievement-issuer,
 body.dark-mode #skills-container {
     color: #4AB7C4;
 }
@@ -476,7 +476,6 @@ CERTIFICATIONS SECTION
 }
 
 .certification-badge {
-    width: 60px;
     height: 60px;
     border-radius: 4px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -539,24 +538,56 @@ ACHIEVEMENTS SECTION
 
 .achievement {
     margin-bottom: 2rem;
+    margin-left: 0.4vh;
+}
+
+.achievement-header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.achievement-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.achievement-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.achievement-badge {
+    height: 30px;
+    border-radius: 4px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.achievement-badge:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .achievement-name {
     color: maroon;
     font-size: 1.2rem;
     font-weight: 600;
-    margin-bottom: 0.5rem;
 }
 
-.issuer {
-    color: orange;
+.achievement-issuer {
+    color: #000;
     font-size: 1.0rem;
     font-weight: 600;
-    margin-bottom: 0.5rem;
 }
 
 .description {
     font-weight: 400;
+    color: #333;
+    font-size: 0.95rem;
 }
 
 /* --------------------------------------------------------

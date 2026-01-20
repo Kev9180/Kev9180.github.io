@@ -9,7 +9,8 @@
             "Implementing a retrieval-augmented generation (RAG) backend using FastAPI, allowing users to upload unstructured files and receive AI-driven insights.",
             "Building and refining the NL2SQL pipeline, integrating with Tachyon API and Impala to generate, validate, and execute secure SQL queries against large-scale databases.",
             "Developing features in the React frontend and Node.js middleware to support schema ingestion and conversational query workflows.",
-            "Collaborating with stakeholders and another developer to deliver an innovative solution that balances modern AI capabilities with regulatory and compliance requirements in a major financial institution."
+            "Collaborating with stakeholders and another developer to deliver an innovative solution that balances modern AI capabilities with regulatory and compliance requirements in a major financial institution.",
+            "Led a frontend TypeScript modernization effort by converting 100+ React component and service files from js to ts/tsx, improving compile-time safety and reducing the risk of runtime defects across the application"
         ]
     },
     {
