@@ -1,5 +1,10 @@
 [
     {
+        "projectName": "MXTracker",
+        "repoLink": "https://github.com/Kev9180/mxtracker-expo",
+        "skillsUsed": "React Native, Typescript, Supabase, Postgres",
+        "description": "MXTracker is a modern, cross-platform application built with React Native (Expo) and TypeScript, designed to serve as a comprehensive digital garage for vehicle maintenance management. The platform leverages a scalable cloud backend powered by Supabase to manage the entire user lifecycle, including secure authentication, identity management, and persistent storage of maintenance records. The application utilizes PostgreSQL with Row-Level Security (RLS) to ensure that vehicle data and detailed service logs remain isolated and secure for each user across iOS, Android, and web platforms. Beyond simple record-keeping, the platform features a sophisticated automated notification engine utilizing Supabase Edge Functions and pg_cron to trigger timezone-aware email reminders via the Resend API. A core feature is the specialized PDF export functionality, which generates professional maintenance reports including creation and modification timestamps to ensure data transparency. To prevent tampering during private-party vehicle sales, each report includes a unique document hash that can be validated via a dedicated 'verify' endpoint. This integration of edge computing, cryptographic document verification, and file-based routing via Expo Router ensures a high-performance, trustworthy experience for maintaining and proving long-term vehicle health."    },
+    {
         "projectName": "AV-B/DFS",
         "repoLink": "https://github.com/Kev9180/AudioBDFS",
         "skillsUsed": "Python, PyAudio, NumPy, Termcolor, Data Structures and Algorithms, Git, GitHub",
@@ -16,12 +21,6 @@
         "repoLink": "https://github.com/Kev9180/Kev9180.github.io",
         "skillsUsed": "JavaScript, HTML, CSS, JSON, Git, GitHub, GitHub Pages",
         "description": "I created my personal website/portfolio as a way to not only keep a central location for all of my experience, projects, and achievements, but to improve my JavaScript, HTML, and CSS skills. I took advantage of the free hosting service made available via GitHub Pages so I can provide a link to website when necessary. I used JSON files to hold my job experience, education, achievements, and projects to make future updates much easier."
-    },
-    {
-        "projectName": "MXTracker",
-        "repoLink": "https://github.com/Kev9180/MXTracker",
-        "skillsUsed": "Swift, XCode, iOS, Git, GitHub",
-        "description": "MXTracker is an iOS application that helps users track maintenance tasks performed on their vehicles. The app supports unlimited vehicle and maintenance record entries using CoreData, ensuring smooth data management. As someone who maintains their own vehicles, I recognized the need for a centralized, accessible tool to manage maintenance records. This app is designed to help fellow enthusiasts keep track of their vehicle's maintenance history in one place, plan future maintenance easily, and maintain accurate service intervals."
     },
     {
         "projectName": "CVS Clincal Affiliations Code Migration",
