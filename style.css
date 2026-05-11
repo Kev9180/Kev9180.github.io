@@ -641,6 +641,7 @@ RESPONSIVENESS - Dynamic resizing
         background-image: none;
         background-color: #00A3E0;
         /* cDItcDE9cDM7IHAyK3AzPXA0OyBwMj0z */
+        overflow: visible;
     }
 
     .header-selfie {
@@ -662,6 +663,7 @@ RESPONSIVENESS - Dynamic resizing
         visibility: visible;
         opacity: 1;
         z-index: 1000;
+        -webkit-overflow-scrolling: touch;
     }
 
     .darkmode-toggle .material-symbols-outlined {
