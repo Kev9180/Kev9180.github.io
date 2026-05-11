@@ -264,6 +264,11 @@ ul {
 
 ul ul {
     padding-left: 2rem;
+    list-style: disc;
+}
+
+ul ul li {
+    margin-left: 1rem;
 }
 
 li {
@@ -688,6 +693,11 @@ RESPONSIVENESS - Dynamic resizing
         display: flex;
     }
 
+    .header-nav-container.active {
+        display: flex;
+        align-items: flex-start;
+    }
+
     .about-header-container {
         display: flex;
         flex-direction: column;
@@ -868,9 +878,4 @@ RESPONSIVENESS - Dynamic resizing
     .header-nav-container a {
         font-size: 0.9rem;
     }
-}
-
-.header-nav-container.active {
-    display: flex;
-    align-items: flex-start;
 }

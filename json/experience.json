@@ -5,12 +5,10 @@
         "company": "Wells Fargo",
         "location": "Chandler, AZ",
         "duties": [
-            "Contributing to the development of an AI-powered chatbot that enables users to query cybersecurity data in natural language, improving accessibility across the enterprise.",
-            "Implementing a retrieval-augmented generation (RAG) backend using FastAPI, allowing users to upload unstructured files and receive AI-driven insights.",
-            "Building and refining the NL2SQL pipeline, integrating with Tachyon API and Impala to generate, validate, and execute secure SQL queries against large-scale databases.",
-            "Developing features in the React frontend and Node.js middleware to support schema ingestion and conversational query workflows.",
-            "Collaborating with stakeholders and another developer to deliver an innovative solution that balances modern AI capabilities with regulatory and compliance requirements in a major financial institution.",
-            "Led a frontend TypeScript modernization effort by converting 100+ React component and service files from js to ts/tsx, improving compile-time safety and reducing the risk of runtime defects across the application"
+            "Leading the frontend development for an internal-facing AI application, migrating the architecture from JavaScript/CRA to TypeScript and Vite to improve build performance and enforce type safety during the development phase.",
+            "Architected a React-based UI designed to visualize multi-step AI flows, including natural language-to-SQL (NL2SQL) query results from cybersecurity data lakes and RAG-driven document interactions.",
+            "Designed an \"AI Data Explorer\" interface that renders complex LLM outputs, including automated query takeaways, chat summaries, and concurrent data-extraction results into a cohesive user experience.",
+            "Spearheading the integration of OIDC and OAuth2 for centralized SSO, collaborating with internal authentication IAM team to configure secure authentication flows and service-to-service credentials."
         ]
     },
     {
