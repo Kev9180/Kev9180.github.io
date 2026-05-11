@@ -110,14 +110,10 @@ HAMBURGER MENU
 .hamburger-menu {
     display: none;
     cursor: pointer;
-    z-index: 1000;
     padding: 10px;
     touch-action: manipulation;
     min-width: 50px;
     min-height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .hamburger-menu .material-symbols-outlined {
@@ -238,7 +234,7 @@ HOME SECTION
 
 .about-header, .about-header-name {
     font-weight: 700;
-    font-size: 5rem;
+    font-size: 3rem;
     margin-right: 1rem;
 }
 
@@ -662,6 +658,10 @@ RESPONSIVENESS - Dynamic resizing
         max-height: 50vh;
         background-color: #00A3E0;
         overflow-y: auto;
+        color: #fff;
+        visibility: visible;
+        opacity: 1;
+        z-index: 1000;
     }
 
     .darkmode-toggle .material-symbols-outlined {
@@ -680,6 +680,11 @@ RESPONSIVENESS - Dynamic resizing
 
     body.dark-mode .header-nav-container {
         background-color: #121212;
+        border: white 0.5px solid;
+    }
+    
+    body.dark-mode .header-nav-container a {
+        color: #e7beff !important;
     }
     /* end dark mode overrides */
 
@@ -688,7 +693,9 @@ RESPONSIVENESS - Dynamic resizing
         padding: 10px 20px;
         width: 100%;
         text-align: left;
-        color: #fff;
+        color: #fff !important;
+        display: block;
+        text-decoration: none;
     }
 
     .header-links-container {
@@ -702,10 +709,8 @@ RESPONSIVENESS - Dynamic resizing
     .hamburger-menu {
         display: flex !important;
         z-index: 1001;
-    }
-
-    .header-nav-container {
-        z-index: 1000;
+        align-items: center;
+        justify-content: center;
     }
 
     .header-nav-container.active {
