@@ -46,9 +46,17 @@ document.addEventListener("DOMContentLoaded", function() {
     const hamburgerMenu = document.querySelector(".hamburger-menu");
     const headerNavContainer = document.querySelector(".header-nav-container");
 
-    hamburgerMenu.addEventListener("click", function() {
+    // Handle both click and touch events for better mobile compatibility
+    function toggleMenu(e) {
+        e.preventDefault();
+        e.stopPropagation();
         headerNavContainer.classList.toggle("active");
-    });
+    }
+
+    if (hamburgerMenu) {
+        hamburgerMenu.addEventListener("click", toggleMenu, false);
+        hamburgerMenu.addEventListener("touchend", toggleMenu, false);
+    }
 
     fetch('json/education.json')
         .then(response => response.json())

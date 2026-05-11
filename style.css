@@ -30,6 +30,7 @@ header {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    z-index: 999;
 
     background-image: url('/assets/Sunset_Vert.jpeg');
     background-size: cover;
@@ -109,11 +110,20 @@ HAMBURGER MENU
 .hamburger-menu {
     display: none;
     cursor: pointer;
+    z-index: 1000;
+    padding: 10px;
+    touch-action: manipulation;
+    min-width: 50px;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .hamburger-menu .material-symbols-outlined {
     font-size: 36px;
     color: #fff;
+    pointer-events: auto;
 }
 
 /* --------------------------------------------------------
@@ -690,12 +700,18 @@ RESPONSIVENESS - Dynamic resizing
     }
 
     .hamburger-menu {
-        display: flex;
+        display: flex !important;
+        z-index: 1001;
+    }
+
+    .header-nav-container {
+        z-index: 1000;
     }
 
     .header-nav-container.active {
-        display: flex;
+        display: flex !important;
         align-items: flex-start;
+        z-index: 1000;
     }
 
     .about-header-container {
