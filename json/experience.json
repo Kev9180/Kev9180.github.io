@@ -1,7 +1,21 @@
 [
     {
-        "role": "Technology Program Analyst – Data Ecosystem Software Engineer",
-        "duration": "August 2025 – Present",
+        "role": "Software Engineer – Secure Networking Automation and Orchestration",
+        "duration": "May 2026 – Present",
+        "company": "Wells Fargo",
+        "location": "Chandler, AZ",
+        "duties": [
+            "Software engineering on the Secure Networking Automation and Orchestration team, building automation for network security workflows.",
+            "Designing patterns and implementing automation to create and manage firewall rules, integrating with internal services and APIs.",
+            "Developing and maintaining tools and services using C#, .NET, and SQL; working in Visual Studio and SQL Server Management Studio (SSMS).",
+            "Collaborating with internal teams to update database schemas, triggers, and stored procedures to add new functionality and modify existing behavior.",
+            "Investigating and dispositioning false positives identified during SAST scans, and implementing fixes or mitigation guidance as needed.",
+            "Participating in code reviews, unit testing, and CI/CD processes to deliver secure, maintainable solutions."
+        ]
+    },
+    {
+        "role": "Software Engineer – Data Ecosystem",
+        "duration": "August 2025 - May 2026",
         "company": "Wells Fargo",
         "location": "Chandler, AZ",
         "duties": [
