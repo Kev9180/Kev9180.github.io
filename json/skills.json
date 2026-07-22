@@ -3,5 +3,5 @@
     "frameworks": "React, FastAPI, Node.js, Express, Angular, SwiftUI, .NET",
     "databases": "Supabase, Microsoft SQL Server, SQL, PostgreSQL, Impala, MongoDB",
     "cloudPlatforms": "Google Cloud Platform",
-    "devTools": "Git, GitHub/GitLab, npm, Docker, Linux, CircleCI, Jenkins, Harness, Jira, Confluence, Trello, Miro, Taiga, Visual Studio, SSMS"
+    "devTools": "Git, GitHub/GitLab, npm, Docker, Linux, Postman, CircleCI, Jenkins, Harness, Jira, Confluence, Trello, Miro, Taiga, Visual Studio, SSMS"
 }
