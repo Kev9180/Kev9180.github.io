@@ -62,13 +62,60 @@
     },
     {
         "role": "NCOIC - Aircraft Operations and Section Training",
-        "duration": "March 2014 - August 2022",
-        "company":  "United States Air Force",
-        "location": "Various",
+        "duration": "May 2019 - August 2022",
+        "company": "United States Air Force",
+        "location": "Grand Forks AFB, ND",
         "duties": [
-            "Instructed 1.5K Air Force and US Government personnel on cargo preparation/pallet build-up, increment monitor, and vehicle training; developed course training plans and conducted periodic course material reviews.",
-            "Authored a 40-hour new employee training and onboarding course and administered course to 45 Airmen, increasing contract completion rate and resulting in zero project delays or security incidents.",
-            "Certified airworthiness and safely on-loaded the $10B James Webb Space Telescope as the Lead Joint Inspector and Load Team Chief; 16-hour safety and airworthiness inspection, 8-hour aircraft cargo upload."
+            "Managed base-wide training programs for pallet build-up, increment monitoring, Cargo Deployment Function operations, and hazardous materials technical specialization, developing training plans and hands-on lessons for approximately 1,500 Air Force personnel.",
+            "Conducted periodic course reviews and ensured training materials remained aligned with applicable Air Force regulations and safety requirements.",
+            "Managed a 38,400-square-foot warehouse and completed daily, weekly, and monthly facility inspections, documenting deficiencies and coordinating repairs and scheduled maintenance.",
+            "Supervised Cargo Deployment Function operations, conducted Joint Inspections for airworthiness, and oversaw the preparation and on-load of cargo onto military aircraft.",
+            "Mentored and supervised eight personnel through quarterly expectations meetings to establish, communicate, and track measurable performance goals."
+        ]
+    },
+    {
+        "role": "Force Protection Escort Supervisor",
+        "duration": "October 2020 - April 2021",
+        "company": "United States Air Force",
+        "location": "Abu Dhabi, United Arab Emirates",
+        "duties": [
+            "Led a team of 36 Airmen responsible for force protection, security check-ups, employee onboarding, and escort operations supporting local contractors on base.",
+            "Conducted contractor physical searches and security escorts, supervised work activities at required locations, and maintained continuous accountability and communication throughout each escort."
+        ]
+    },
+    {
+        "role": "Aircraft Services Technician",
+        "duration": "April 2017 - May 2019",
+        "company": "United States Air Force",
+        "location": "JB Andrews, MD",
+        "duties": [
+            "Provided cargo and logistics support for inbound and outbound aircraft, including safe loading and unloading with forklifts and other material handling equipment and preparation for surface and air transportation.",
+            "Coordinated time-sensitive cargo requirements with agencies including the United States Secret Service and White House Communications Agency to ensure mission cargo moved on schedule.",
+            "Inspected outgoing cargo for airworthiness, maintained daily inventories, and coordinated pickup and delivery of terminating cargo.",
+            "Served as Lead Joint Inspector and Load Team Chief for the James Webb Space Telescope, completing a 16-hour safety and airworthiness inspection and an eight-hour aircraft cargo upload for the $10 billion asset."
+        ]
+    },
+    {
+        "role": "Special Handling Technician",
+        "duration": "May 2016 - April 2017",
+        "company": "United States Air Force",
+        "location": "Pyeongtaek-si, South Korea",
+        "duties": [
+            "Managed the handling, inspection, storage, and shipment of hazardous materials, explosives, toxic substances, classified cargo, and sensitive medical shipments including blood and vaccines.",
+            "Verified required documentation and prepared, packaged, and inspected special-handling cargo in accordance with strict transportation, storage, and safety regulations.",
+            "Served as an Explosive Safety Supervisor and monitored all explosive cargo movements to ensure personnel followed approved handling procedures.",
+            "Supported an eight-person team at the peninsula's single point of debarkation, coordinating pickup and delivery for all military cargo terminating in South Korea."
+        ]
+    },
+    {
+        "role": "Passenger Service / Air Terminal Representative",
+        "duration": "March 2014 - May 2016",
+        "company": "United States Air Force",
+        "location": "Scott AFB, IL",
+        "duties": [
+            "Processed passengers for military air travel by verifying eligibility under Air Force and Department of Defense regulations, screening personnel and baggage, and confirming required documentation, including Foreign Clearance Guide requirements.",
+            "Sequenced and loaded passengers and cargo aboard military aircraft while operating material handling equipment and aircraft-loading vehicles.",
+            "Served as a section Vehicle Control Officer, maintaining vehicle maintenance records, documentation, accountability, and monitoring procedures."
         ]
     }
 ]
