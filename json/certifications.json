@@ -1,18 +1,26 @@
 [
     {
+        "certificationName": "GSEC (GIAC Security Essentials)",
+        "issuer": "GIAC",
+        "dateEarned": "November 2026",
+        "description": "Validates practical knowledge of security essentials, including active defense, network security, incident handling, cryptography, Linux security, and Windows security through GIAC's hands-on cybersecurity certification.",
+        "badgeUrl": "",
+        "credlyProfileUrl": ""
+    },
+    {
         "certificationName": "Network+",
         "issuer": "CompTIA",
         "dateEarned": "November 2025",
+        "description": "Demonstrates the ability to troubleshoot, configure, and manage wired and wireless networks, including networking concepts, infrastructure, security, operations, and cloud technologies.",
         "badgeUrl": "/assets/badges/comptia-net-plus-300x300.png",
-        "credlyProfileUrl": "https://www.credly.com/badges/913eadfa-28d2-4f05-9769-a33afdc41873",
-        "description": "Validated foundational networking knowledge including network architecture, infrastructure, operations, security, and troubleshooting. Demonstrated proficiency with network devices, protocols, and industry best practices."
+        "credlyProfileUrl": "https://www.credly.com/badges/913eadfa-28d2-4f05-9769-a33afdc41873"
     },
     {
         "certificationName": "Certified in Cybersecurity (CC)",
         "issuer": "ISC2",
         "dateEarned": "September 2025",
+        "description": "Validates foundational knowledge of cybersecurity principles, including security principles, business continuity, access controls, network security, and security operations.",
         "badgeUrl": "/assets/badges/isc2-cc-600x600.png",
-        "credlyProfileUrl": "https://www.credly.com/badges/6860db3d-6c30-4acb-9e2c-f3e15be759f4/public_url",
-        "description": "The vendor-neutral CC credential starts newcomers on their path to advanced cybersecurity certifications and future leadership roles. It proves to organizations that newly certified team members understand fundamental security principles and operations, network security and access controls and that they have the skills to meet and exceed performance standards in their beginning roles. All this allows organizations to build a stronger line of defense."
+        "credlyProfileUrl": "https://www.credly.com/badges/6860db3d-6c30-4acb-9e2c-f3e15be759f4/public_url"
     }
 ]
