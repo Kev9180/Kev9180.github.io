@@ -4,8 +4,8 @@
         "issuer": "GIAC",
         "dateEarned": "November 2026",
         "description": "Validates practical knowledge of security essentials, including active defense, network security, incident handling, cryptography, Linux security, and Windows security through GIAC's hands-on cybersecurity certification.",
-        "badgeUrl": "",
-        "credlyProfileUrl": ""
+        "badgeUrl": "/assets/badges/giac-security-essentials-certification-gsec.png",
+        "credlyProfileUrl": "https://www.credly.com/badges/afa990ae-7725-4f7c-b3e3-a16c3e07284f/public_url"
     },
     {
         "certificationName": "Network+",
