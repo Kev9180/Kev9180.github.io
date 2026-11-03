@@ -19,10 +19,10 @@
         "company": "Wells Fargo",
         "location": "Chandler, AZ",
         "duties": [
-            "Leading the frontend development for an internal-facing AI application, migrating the architecture from JavaScript/CRA to TypeScript and Vite to improve build performance and enforce type safety during the development phase.",
+            "Led the frontend development for an internal-facing AI application, migrating the architecture from JavaScript/CRA to TypeScript and Vite to improve build performance and enforce type safety during the development phase.",
             "Architected a React-based UI designed to visualize multi-step AI flows, including natural language-to-SQL (NL2SQL) query results from cybersecurity data lakes and RAG-driven document interactions.",
-            "Designed an \"AI Data Explorer\" interface that renders complex LLM outputs, including automated query takeaways, chat summaries, and concurrent data-extraction results into a cohesive user experience.",
-            "Spearheading the integration of OIDC and OAuth2 for centralized SSO, collaborating with internal authentication IAM team to configure secure authentication flows and service-to-service credentials."
+            "Designed an \"AI Data Explorer\" interface that rendered complex LLM outputs, including automated query takeaways, chat summaries, and concurrent data-extraction results into a cohesive user experience.",
+            "Spearheaded the integration of OIDC and OAuth2 for centralized SSO, collaborating with the internal authentication IAM team to configure secure authentication flows and service-to-service credentials."
         ]
     },
     {
